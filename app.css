@@ -249,20 +249,19 @@ span {
 
 /*------------------SECTIONS------------------*/
 
-/*--------HEADER--------*/
-/*
-.header {
-    height: 100vh;
-    min-height: 800px;
-} */ 
 
 /*--------NAVBER--------*/
 
 .navbar {
     height: var(--nav-height);
-  
-
-}
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+  }
+  .nav-btn-container {
+    display: flex;
+    gap: 2rem;
+  }
 
 /*--------HERO SECTION--------*/
 
@@ -325,7 +324,19 @@ span {
 /*--------FOOTER SECTION--------*/
 
 .footer{
-    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icons-container {
+    display:flex;
+    gap: 1.5rem;
+}
+.footer-links-container {
+    display: flex;
+    gap: 1rem;
 }
 .social-icons {
     width: 20px;
