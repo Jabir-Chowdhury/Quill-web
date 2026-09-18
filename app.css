@@ -100,10 +100,7 @@ Black: #000000 (Black)
     /*MISCELLANEOUS */
 
     --nav-height: 300px; /* Update the value in the felxbox topic */
-
 }
-
-
 
 * {
     box-sizing: border-box;
@@ -267,17 +264,27 @@ span {
 
 .hero-section {
     height: calc(100vh - var(--nav-height));
-    text-align: center;
+    
     margin-bottom: 10rem;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .hero-heading {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .hero-paragraph {
     margin-bottom: 5rem;
+}
+.hero-btn-container {
+    display: flex;
+    gap: 2rem;
 }
 
 /*--------FEATURE SECTION--------*/
@@ -289,6 +296,11 @@ span {
 .features-main-heading {
     text-align: center;
     margin-bottom: 8rem;
+}
+
+.features-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .features-heading {
@@ -305,15 +317,18 @@ span {
 
 .cta-section {
     margin-bottom: 30rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cta-card {
     text-align: center;
     background-color: var(--primary-base);
     max-width: 1000px;
+    width: 100%;
     padding: 10rem 20rem;
     border-radius: 20px;
-    margin: 0 auto;
+    
 }
 
 .cta-heading {
