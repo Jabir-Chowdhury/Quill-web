@@ -111,6 +111,7 @@ Black: #000000 (Black)
 
 html {
     font-size: 62.5%;
+    /* 10px / 16px = 62.5% */
 }
 
 body {
@@ -118,6 +119,7 @@ body {
     font-weight: var(--font-weight-normal);
     line-height: var(--font-height-normal);
     color: var(--grey-base);
+
 }
 
 .container {
@@ -198,6 +200,7 @@ span {
     color: var(--white);
     background-color: var(--primary-shade);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .btn-primary-outline:link, .btn-primary-outline:visited {
@@ -210,6 +213,7 @@ span {
     color: var(--primary-shade);
     background-color: var(--white);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .btn-secondary:link, .btn-primary:visited {
@@ -222,6 +226,7 @@ span {
     color: var(--white);
     background-color: var(--secondary-shade);
     border: 2px solid var(--secondary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .highlight {
@@ -248,7 +253,41 @@ span {
     width: 80px;
 }
 
+.chats-container {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--primary-base);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
 
+.chats-icon {
+    width: 5rem;
+    height: 5rem;
+}
+.beta {
+    position: relative;
+}
+.beta::after {
+    content: 'beta';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--secondary-base);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--white);
+    transform: translate(70%, -70%);
+
+
+
+}
 /*------------------SECTIONS------------------*/
 
 
